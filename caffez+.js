@@ -1,8 +1,7 @@
-
-let name = prompt("Please enter your name:");
+let gender;
 function a()
 {
-   let gender;
+
    while(gender !== "male" || gender !== "female" )
    {
      gender= prompt("what is your gender (male OR female)?");
@@ -19,14 +18,18 @@ function a()
    
    }
 }
+let name = prompt("Please enter your name:");
 a();
 let drink_type= prompt("would you like a hot or cold drink?").toLocaleLowerCase();
-
 let drink_name= prompt("what is your drink name");
 
 var userinfo=[];
-userinfo.push(name,gender,drink_type,drink_name);
+userinfo.push(name);
+userinfo.push(gender);
+userinfo.push(drink_type)
+userinfo.push(drink_name);
 for(let i=0;i<userinfo.length;i++)
 {
    console.log(userinfo[i]);
 }
+
