@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <form id="uform">
+            <div class="form-group">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div><br>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+<br>
+            <div class="form-group">
+                <label>Drink Type:</label><br>
+                <input type="checkbox" id="hot" name="drinkType" value="hot">
+                <label for="hot">Hot</label><br>
+                <input type="checkbox" id="cold" name="drinkType" value="cold">
+                <label for="cold">Cold</label>
+            </div>
+<br>
+            <div class="form-group">
+                <label for="drinkName">Drink Name:</label>
+                <input type="text" id="drinkName" name="drinkName" required>
+            </div>
+<br>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div id="uinfo" class="uinfo">
+            <h2>User Information</h2>
+            <div id="udata" class="udata">
+                <p>Name:</p>
+                <p>Age:</p>
+                <p>Drink Type & Drink Name:</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Events.js"></script>
+</body>
+</html>
